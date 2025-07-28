@@ -252,3 +252,108 @@ margin: 0.5rem 0;
   color: #ccc;
 }
 
+.tutorials {
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.tutorials h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.tutorials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.video-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.video-info h3 {
+  margin: 0;
+   font-weight: bold;
+}
+.popular {
+  color: #c26efe;
+  font-weight: bold;
+}
+
+.video-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.author h4 {
+  margin: 0;
+}
+
+.duration {
+  font-size: 0.75rem;
+  color: gray;
+  margin-top: 0.2rem;
+}
+
+.stars {
+  color: #c26efe;
+  margin-top: 0.5rem;
+}
+.thumbnail-container {
+  position: relative;
+}
+
+.thumbnail {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0.85;
+  cursor: pointer;
+}
+.play-icon:hover {
+  opacity: 1;
+}

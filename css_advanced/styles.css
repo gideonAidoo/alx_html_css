@@ -473,3 +473,39 @@ margin: 0.5rem 0;
   color: #c26efe;
   font-weight: bold;
 }
+.site-footer {
+  background-color: #f8f8f8;
+  padding: 1.5rem 2rem;
+  font-size: 0.9rem;
+  background-color: #071629;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left .footer-logo {
+  width: 50px;   /* reduced from 80px */
+  height: auto;
+}
+
+.footer-center {
+  text-align: center;
+  flex: 1;
+  color: #fff;
+}
+
+.footer-right i {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+

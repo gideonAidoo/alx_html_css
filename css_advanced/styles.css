@@ -207,4 +207,48 @@ margin: 0.5rem 0;
   color: #ccc;
 }
 
+.testimonial-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+  text-align: left;
+  background-color:  #c26efe;
+  
+
+  
+}
+
+.testimonial img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #c26efe;
+}
+
+.testimonial-text {
+  max-width: 500px;
+}
+
+.testimonial-text blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.testimonial-text h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.testimonial-text p {
+  font-size: 1rem;
+  color: #ccc;
+}
 

@@ -357,3 +357,69 @@ margin: 0.5rem 0;
 .play-icon:hover {
   opacity: 1;
 }
+.thumbnail-container:hover .play-icon {
+  opacity: 1;
+}
+
+.membership {
+  text-align: center;
+  padding: 2rem;
+  background-color: #071629;
+  border-radius: 8px;
+}
+
+.membership-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+.membership h2{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+
+}
+
+.membership .highlight{
+  color: #c26efe;
+  font-weight: bold;
+}
+.membership-features img {
+  width: 40px;
+  margin-bottom: 0.5rem;
+}
+.membership h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+.membership p{
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+
+.register-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  background-color: #c26efe;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.register-btn:hover {
+  background-color: #a695a8;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.highlight {
+  color: #c26efe;
+}
+.membership h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}

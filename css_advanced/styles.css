@@ -364,21 +364,23 @@ margin: 0.5rem 0;
 .membership {
   text-align: center;
   padding: 2rem;
-  background-color: #071629;
   border-radius: 8px;
-}
+  background-color: #071629;
+  color: #fff;
 
-.membership-features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 2rem;
-  margin: 2rem 0;
+;
 }
 .membership h2{
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #fff;
-
+}
+.membership-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 .membership .highlight{
@@ -398,9 +400,8 @@ margin: 0.5rem 0;
   font-size: 0.9rem;
   color: #ccc;
   margin-bottom: 1rem;
+
 }
-
-
 .register-btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -422,4 +423,53 @@ margin: 0.5rem 0;
 .membership h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #fff;
+}
+
+.faq {
+  padding: 2rem;
+    background-color: #fff;
+
+}
+
+.faq-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.faq-columns div {
+  flex: 1 1 300px;
+}
+.faq-columns div h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #071629;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+
+}
+
+.faq h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.faq p {
+  margin-bottom: 1.5rem;
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  text-align: justify;
+  padding: 0 1rem;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+}
+.faq .highlight {
+  color: #c26efe;
+  font-weight: bold;
 }

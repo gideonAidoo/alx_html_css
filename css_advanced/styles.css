@@ -486,7 +486,9 @@ margin: 0.5rem 0;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 7px auto;
+   padding: 3rem 2rem;       
+  font-size: 0.9rem;
 }
 
 .footer-left .footer-logo {

@@ -1,0 +1,96 @@
+#results .grid .element {
+  /* Remove these background properties */
+  /*
+  background-image: url("images/pentagone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  */
+  height: 10rem;
+  padding: 0;
+  position: relative;
+}
+
+/* Pentagon Shape CSS */
+.pentagon {
+  width: 100px;
+  height: 100px;
+  background: var(--color-red);
+  margin: 0 auto 1rem auto;
+  clip-path: polygon(
+    50% 0%,     /* top */
+    100% 38%,   /* right upper */
+    82% 100%,   /* right lower */
+    18% 100%,   /* left lower */
+    0% 38%      /* left upper */
+  );
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+#results .grid .element h2 {
+  margin-top: 0.5rem;
+  font-size: var(--font-large);
+  color: var(--color-white);
+}
+
+#results .grid .element p {
+  margin-top: 0.3rem;
+  color: var(--color-white);
+}
+
+/* Smooth transition for transform and opacity */
+main .grid .element {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  cursor: pointer; /* show pointer on hover */
+}
+
+/* Hover animation: scale, rotate, and pulse */
+main .grid .element:hover {
+  animation: bounceRotateScale 0.6s ease forwards;
+}
+
+/* Optional: subtle continuous pulse animation (uncomment if desired) */
+/*
+main .grid .element {
+  animation: pulseScale 3s ease-in-out infinite;
+}
+*/
+
+/* Keyframes for bounce + rotate + scale */
+@keyframes bounceRotateScale {
+  0% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  30% {
+    transform: scale(1.1) rotate(10deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.15) rotate(-10deg);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Optional: gentle pulse scaling */
+@keyframes pulseScale {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+}
+main .grid .element {
+  cursor: pointer;
+}

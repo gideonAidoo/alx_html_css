@@ -1,0 +1,326 @@
+/* =========================================================
+   1. RESET (Meyerweb)
+   http://meyerweb.com/eric/tools/css/reset/
+   ========================================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote::before, blockquote::after,
+q::before, q::after { content: ''; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* =========================================================
+   2. NORMALIZE (v8.0.1) - trimmed for essentials
+   ========================================================= */
+html { line-height: 1.15; -webkit-text-size-adjust: 100%; }
+body { margin: 0; }
+main { display: block; }
+h1 { font-size: 2em; margin: .67em 0; }
+img { border-style: none; }
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+a { background-color: transparent; }
+
+/* =========================================================
+   3. CUSTOM STYLES
+   ========================================================= */
+
+/* Variables */
+:root {
+	--color-white: #fff;
+	--color-red: #FF6565;
+	--font-small: 12px;
+	--font-medium: 16px;
+	--font-large: 32px;
+	--font: 'Source Sans Pro', 'Lato', sans-serif;
+}
+
+/* Global link style */
+a {
+	text-decoration: none;
+	color: var(--color-white);
+	transition: color 0.1s ease;
+}
+a:hover, a:active { color: var(--color-red); }
+
+/* Button */
+.button {
+	font-family: var(--font);
+	font-size: 14px;
+	background: var(--color-red);
+	color: white;
+	border: none;
+	padding: 1rem 2rem;
+	font-weight: 700;
+	border-radius: 24px;
+	margin: 1rem auto;
+	cursor: pointer;
+	box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+	transition: opacity 0.2s ease;
+}
+.button:hover, .button:active { opacity: 0.9; }
+
+/* ========================
+   HEADER
+   ======================== */
+header {
+	width: 100%;
+	background-image: url("images/headphones_hero_1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: var(--color-white);
+	position: relative;
+}
+
+/* Header layout */
+.header {
+	max-width: 1000px;
+	display: flex;
+	justify-content: center;
+	margin: auto;
+	padding: 2rem;
+	flex-wrap: wrap;
+}
+
+header nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+
+/* Logo */
+.logo {
+	width: 161px;
+	height: auto;
+}
+
+/* Navigation */
+.header-nav {
+	display: flex;
+	font-size: var(--font-small);
+	font-weight: 700;
+	font-family: var(--font);
+}
+.header-nav li { margin: 0 1.25rem; }
+
+/* Header text */
+.header-content {
+	width: 75%;
+	text-align: center;
+	font-family: var(--font);
+	margin: 20rem auto 0;
+}
+.header-content p {
+	margin: 2rem 0;
+	line-height: 1.5;
+	font-size: var(--font-medium);
+}
+
+/* Title */
+.title {
+	font-size: var(--font-large);
+	font-weight: 700;
+	position: relative;
+}
+.title::after {
+	content: "Lorem ipsum dolor set amet lorem ipsum";
+	display: block;
+	font-size: var(--font-medium);
+	margin-top: 0.25rem;
+}
+
+/* ========================
+   MAIN SECTION
+   ======================== */
+main {
+	width: 100%;
+	position: relative;
+}
+main p {
+	text-align: center;
+	width: 65%;
+	margin: 2rem auto;
+	line-height: 1.5;
+	font-size: var(--font-medium);
+	font-family: var(--font);
+}
+main .container { padding: 4rem; flex-wrap: wrap; }
+
+/* Grid layout */
+main .grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+	text-align: center;
+	font-family: var(--font);
+	margin: 2rem 0;
+}
+main .grid .element p {
+	width: 100%;
+	margin: 0;
+	font-size: 14px;
+}
+main .grid .element h2 {
+	font-size: var(--font-medium);
+}
+
+/* Icons */
+.holberton_school-icon-ic_sound,
+.holberton_school-icon-ic_video,
+.holberton_school-icon-ic_music,
+.holberton_school-icon-ic_hearing {
+	color: var(--color-red);
+	font-size: 46px;
+}
+
+/* Section title */
+.section-title {
+	width: 100%;
+	margin: auto;
+	font-size: var(--font-large);
+	font-weight: lighter;
+	text-align: center;
+}
+
+/* ========================
+   MEDIA QUERIES
+   ======================== */
+
+/* Mobile */
+@media (max-width: 480px) {
+	.logo { width: 50%; }
+	.header-nav {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		margin: 1rem auto;
+		text-align: center;
+	}
+	.header-nav li {
+		width: 100%;
+		margin: 0.5rem 0;
+	}
+	.header-content {
+		margin-top: 14rem;
+		width: 100%;
+	}
+	main p { width: 100%; }
+	main .grid {
+		grid-template-columns: 1fr;
+	}
+	main .grid .element p {
+		width: 70%;
+		margin: auto;
+	}
+}
+
+/* Tablet / Desktop */
+@media (max-width: 1200px) {
+	header { background-position: 42% 50%; }
+}
+
+
+
+
+
+/* Hide checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger button styles */
+#menu-btn {
+  display: none; /* show only on mobile */
+  position: absolute;
+  left: 1rem;
+  top: 18px;
+  width: 25px;
+  height: 2px;
+  background: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Hamburger lines */
+#menu-btn::before,
+#menu-btn::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: white;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+#menu-btn::before {
+  top: -8px;
+}
+
+#menu-btn::after {
+  top: 8px;
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 480px) {
+  #menu-btn {
+    display: block;
+  }
+
+  /* Hide nav by default */
+  .header-nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  /* Show nav when checked */
+  #menu-toggle:checked ~ .header-nav {
+    display: flex;
+  }
+
+  /* Animate hamburger to "X" when checked */
+  #menu-toggle:checked + #menu-btn {
+    background: transparent;
+  }
+  #menu-toggle:checked + #menu-btn::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #menu-toggle:checked + #menu-btn::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+}
